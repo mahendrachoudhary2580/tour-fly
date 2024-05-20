@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Tour Fly - Travel agancy</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" alt="Tour Fly logo" style="width: 55%;">
+                </a>
+            </div>
+            <div class="container" style="text-align: left;">
+
+
+
+
+                </form>
+
+                </button>
+
+                <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+            </div>
+
+        </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+
+                <!-- <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul> -->
+
+                <nav class="navbar" data-navbar>
+
+                    <div class="navbar-top">
+
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo.png" alt="Tour Fly logo">
+                        </a>
+
+                        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+                    </div>
+
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#home" class="navbar-link" data-nav-link>home</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link" data-nav-link>about us</a>
+                        </li>
+
+                        <li>
+                            <a href="#destination" class="navbar-link" data-nav-link>destination</a>
+                        </li>
+
+                        <li>
+                            <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!-- <button class="btn btn-primary">Book Now</button> -->
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="hero" id="home">
+                <div class="container">
+
+                    <h2 class="h1 hero-title">Journey to explore India</h2>
+
+                    <p class="hero-text">
+                        Discover the magic of India with Tour Fly! We offer expertly crafted tours that showcase India’s rich history, diverse culture, and stunning landscapes. From the iconic Golden Triangle to serene Himalayan adventures, enjoy authentic, comfortable, and
+                        unforgettable travel experiences. Tour Fly – your gateway to exploring India.
+                    </p>
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #TOUR SEARCH
+      -->
+
+            <section class="tour-search">
+                <div class="container">
+                    <form class="max-w-md mx-auto w-full">
+                        <div class="flex">
+                            <label for="location-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+                            <button id="dropdown-button-2" data-dropdown-toggle="dropdown-search-city" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+                                type="button">
+                      
+                    Select a Location
+     
+          </button>
+                            <div id="dropdown-search-city" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button-2">
+                                    <li id="jaipur-button">
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                              <div class="inline-flex items-center">
+                                             
+                               Jaipur
+                              </div>
+                          </button>
+                                    </li>
+                                    <li>
+                                        <button id="jodhpur-button" type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                  <div class="inline-flex items-center">
+                                                 
+                                    Jodhpur
+                                  </div>
+                              </button>
+                                    </li>
+                                    <li id="udaipur-button">
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                  <div class="inline-flex items-center">
+                                    Udaipur
+                                     
+                                  </div>
+                              </button>
+                                    </li>
+                                    <li id="jaisalmer-button">
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                  <div class="inline-flex items-center">
+                                                 
+                                    Jaisalmer
+                                  </div>
+                              </button>
+                                    </li>
+                                    <li id="bikaner-button">
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                  <div class="inline-flex items-center">
+                                      
+                                   Bikaner
+                                  </div>
+                              </button>
+                                    </li>
+                                    <li id="pushkar-button">
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                                <div class="inline-flex items-center">
+                                    
+                                  Pushkar
+                                </div>
+                            </button>
+                                    </li>
+                                    <li id="kota-button">
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                              <div class="inline-flex items-center">
+                                  
+                              Kota
+                              </div>
+                          </button>
+                                    </li>
+                                    <li id="mount-abu-button">
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                            <div class="inline-flex items-center">
+                                
+                              Mount Abu
+                            </div>
+                        </button>
+                                    </li>
+
+                                    <li id="ranthambore-button">
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                          <div class="inline-flex items-center">
+                              
+                            Ranthambore
+                          </div>
+                      </button>
+                                    </li>
+
+                                    <li id="bharatpur-button">
+                                        <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                        <div class="inline-flex items-center">
+                            
+                          Bharatpur
+                        </div>
+                    </button>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="relative w-full">
+                                <input type="search" id="location-search" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                                    placeholder="Search for city or address" required />
+                                <button type="submit" class="absolute top-0 end-0 h-full p-2.5 text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                          </svg>
+                          <span class="sr-only">Search</span>
+                      </button>
+                            </div>
+                        </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #POPULAR
+      -->
+
+            <section class="popular" id="destination">
+                <div class="container">
+
+                    <p class="section-subtitle">Places you wants to Explore</p>
+
+                    <h2 class="h2 section-title">Rich Culture area of India</h2>
+
+                    <p class="section-text">
+                        Rich Culture of India Immerse yourself in the vibrant tapestry of India’s culture. Experience the diversity through its colorful festivals, traditional dances, exquisite cuisine, and timeless arts. From the spiritual rituals of Varanasi to the royal heritage
+                        of Rajasthan, India's rich cultural heritage promises an unforgettable journey of discovery and enchantment.
+                    </p>
+
+                    <ul class="popular-list">
+
+                        <li>
+                            <div class="popular-card" id="jaipur">
+
+                                <figure class="card-img" id="">
+                                    <img id="" src="./assets/images/Jaipur.jpg" alt="jaipur" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle">
+                                        <a href="#">Jaipur</a>
+                                    </p>
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Hawa Mahal</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Hawa Mahal: Intricate, iconic palace facade.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card" id="jodhpur">
+
+                                <figure class="card-img">
+                                    <img src="./assets/images/jodhpur.jpg" alt="Jodhpur" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle">
+                                        <a href="#">Jodhpur</a>
+                                    </p>
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Mehran Garh</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Mehrangarh Fort: Majestic, historic splendor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card" id="udaipur">
+
+                                <figure class="card-img">
+                                    <img src="./assets/images/Udaipur1.jpg" alt="Udaipur" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle">
+                                        <a href="#">Udaipur</a>
+                                    </p>
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Lake Pichola</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Lake Pichola: Serene, picturesque waterscape.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <button class="btn btn-primary">More destintion</button>
+
+                </div>
+            </section>
+
+
+
+            <!-- 
+        - #GALLERY
+      -->
+
+            <section class="gallery" id="gallery">
+                <div class="container">
+
+                    <p class="section-subtitle">Traveler's Memories</p>
+
+                    <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+                    <p class="section-text">
+                        Traveler's Memories Browse vibrant photos capturing unforgettable moments, diverse cultures, and stunning landscapes from our travelers' incredible journeys across India.
+                    </p>
+
+                    <ul class="gallery-list">
+
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+                            </figure>
+                        </li>
+
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+                            </figure>
+                        </li>
+
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+                            </figure>
+                        </li>
+
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+                            </figure>
+                        </li>
+
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+                            </figure>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #CTA
+      -->
+
+            <section class="cta" id="contact">
+                <div class="container">
+
+                    <div class="cta-content">
+                        <p class="section-subtitle">Call To Action</p>
+
+                        <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+
+                        <p class="section-text">
+
+                        </p>
+                    </div>
+
+                    <button class="btn btn-secondary">Contact Us !</button>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.png" alt="Tour Fly logo">
+                    </a>
+
+                    <p class="footer-text">
+                        <B>TOUR FLY</B> is your trusted travel partner, offering expertly curated tours across India’s most captivating destinations. Discover rich cultural experiences, stunning landscapes, and unforgettable adventures with us.
+                    </p>
+
+                </div>
+
+                <div class="footer-contact">
+
+                    <h4 class="contact-title">Contact Us</h4>
+
+                    <p class="contact-text">
+                        Feel free to contact and reach us !!
+                    </p>
+
+                    <ul>
+
+                        <li class="contact-item">
+                            <ion-icon name="call-outline"></ion-icon>
+
+                            <a href="tel:+917357585628" class="contact-link">+91 (735) 75856 28</a>
+                        </li>
+
+                        <li class="contact-item">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <a href="mailto:info.tourly.com" class="contact-link">mahendraaanjana2580@gmail.com</a>
+                        </li>
+
+                        <li class="contact-item">
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>Ucet, Bikaner</address>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-form">
+
+                    <p class="form-text">
+                        Subscribe our newsletter for more update & news !!
+                    </p>
+
+                    <form action="" class="form-wrapper">
+                        <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2024 <a href="">mahendra choudhary</a>. All rights reserved
+                </p>
+
+                <ul class="footer-bottom-list">
+
+                    <li>
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-bottom-link">Term & Condition</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-bottom-link">FAQ</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
